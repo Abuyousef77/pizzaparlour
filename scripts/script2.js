@@ -1,23 +1,26 @@
-// user
-$(function() {
-  $("form").submit(function() {
+$(document).ready(function() {
+    function Pizza(size, toppings) {
+    this.size = size;
+    this.toppings = toppings;
+    this.price = "zero";
+    };
+
+Pizza.prototype.totalprice =function(){
+  if(this.size=="small") {
+    this.price="three dollars"
+  }else if (this.size=="medium"){
+    this.price="five dollars"
+  }else{
+    this.price="ten dollars"
+  }
+};
+    $("#order").submit(function(event) {
       event.preventDefault()
-      var num=$(this.answer).val();
-      var currentnumber=1
-      while(currentnumber<=num){
-      var newentry= $("<li>"+currentnumber+"</li>")
-      currentnumber++
+      var size=$(this.size).val();
+      var toppings=$(this.toppings).val();
+      var newpizza=new Pizza(size, toppings)
+      newpizza.totalprice
+        alert(newpizza.price)
 
-
-    if(currentnumber%2==0) {
-      var evenslist= $("#even")
-      newentry.appendTo(evenslist);
-    // alert('This is an even number');
-    }else{
-      var oddslist= $("#odds")
-      newentry.appendTo(oddslist);
-    // alert("This is an odd number");
-    }
-    }
-  });
+    });
 });
