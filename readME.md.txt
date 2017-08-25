@@ -1,15 +1,13 @@
-This is a ping pong game. 
-Author: Benjamin Bressler 
-Program name: Ping Pong
+This is a program that will determine which numerical
+value are either odd or even.
+Author: Benjamin Bressler
+Program name: odd or even
 Setup instructions:
 
 Clone repository
 Open repository index in web browser
 Open webpage
-Put any numerical value higher than 1.
-Press the "PingPong!!!" button, and the program will 
-will take all of the numbers from 1 to the the number you put and indicate
-which ones are ping(3), pong(5) and ping-pong(15). Each of the three options
-indicates, that those numbers are divisible by either 3(ping),5(pong) or 15(ping-pong).
-Copyright (c) 2017 Benjamim Bressler Copyright Holder All Rights Reserved. 
-This software is licensed under the MIT license. https://github.com/Abuyousef77/pingpong
+Put any numerical value in the form
+Press submit button to display to arrays, one of odd numbers and one of even.
+Copyright (c) 2017 Benjamim Bressler Copyright Holder All Rights Reserved.
+This software is licensed under the MIT license.
