@@ -1,0 +1,18 @@
+img.resize {
+  display: block;
+  width:800px;
+  height:800px;
+  margin: auto;
+}
+
+#order {
+  text-align: center
+}
+
+h1 {
+  text-align: center
+}
+
+h2 {
+  text-align: center
+}
